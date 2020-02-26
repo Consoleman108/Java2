@@ -18,7 +18,7 @@ public class Main {
 
         Obstacle[] obstacles = {
                 new Racetrack(10),
-                new Wall(0)};
+                new Wall(2)};
 
         for (Participant  participant: participants) {
             for (Obstacle obstacle: obstacles) {
