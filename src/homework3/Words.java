@@ -63,4 +63,5 @@ public class Words {
         System.out.println("Размер: " + map.size() + " слов");
         System.out.println("---------------------------------------------\n");
     }
+
 }
