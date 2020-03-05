@@ -31,7 +31,8 @@ public class Main {
     static int checkArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
         int result = 0;
 
-        if (array.length > 4 && array.length < 0) {
+        if ((array.length > ARRAY_SIZE && array.length < ARRAY_SIZE) &&
+                (array[ARRAY_SIZE].length > ARRAY_SIZE && array[ARRAY_SIZE].length < ARRAY_SIZE) ) {
             throw new MyArraySizeException("Максимальный размер матрицы 4 x 4. Текущий размер ", array.length);
         }
 
