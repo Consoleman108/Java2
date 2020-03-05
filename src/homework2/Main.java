@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         String[][] strings = intiArray(ARRAY_SIZE);
         // Генерация ошибки
-        strings = generateError(strings);
+        // strings = generateError(strings);
         try {
             System.out.println("Sum: " + checkArray(strings));
         }catch (MyArraySizeException ex){
@@ -31,7 +31,7 @@ public class Main {
     static int checkArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
         int result = 0;
 
-        if (array.length > 4) {
+        if (array.length > 4 && array.length < 0) {
             throw new MyArraySizeException("Максимальный размер матрицы 4 x 4. Текущий размер ", array.length);
         }
 
